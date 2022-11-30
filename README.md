@@ -1,8 +1,8 @@
 
 
-### studnetapp_vue Frontend
+### student-frontend-vue2
 
-This project is the example backend for the student app, implemented in Vue.
+This project is the example backend for the Student List app, implemented in Vue.
 
 
 #### Prerequisites
@@ -21,7 +21,7 @@ This project is the example backend for the student app, implemented in Vue.
 
 1. First, clone to repo to make a local copy of it.
     ```bash
-    git clone https://github.com/OC-ComputerScience/IA-Student-FrontEnd.git
+    git clone https://github.com/OC-ComputerScience/student-frontend-vue2.git
     ```
 2. Move into the new directory
     ```bash
