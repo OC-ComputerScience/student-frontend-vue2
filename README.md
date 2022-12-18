@@ -17,7 +17,7 @@ This project is the example backend for the Student List app, implemented in Vue
   sudo npm install -g npm@latest
   ```
 
-#### Setup
+##### Setup
 
 1. First, clone the repo to make a local copy of it.
    ```bash
@@ -25,7 +25,7 @@ This project is the example backend for the Student List app, implemented in Vue
    ```
 2. Move into the right directory.
    ```bash
-   cd  c:/XAMPP/htdocs/studentapp/student-frontend-vue2
+   cd c:/XAMPP/htdocs/studentapp/student-frontend-vue2
    ```
 3. (Optional) Update the backend url in `vue.config.js`.
 
