@@ -1,6 +1,6 @@
 # student-frontend-vue2
 
-This project is the example backend for the Student List app, implemented in Vue 2.
+This project is the example Vue 2 frontend for the Student List application.
 
 ### Prerequisites
 
