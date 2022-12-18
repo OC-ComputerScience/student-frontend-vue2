@@ -29,12 +29,12 @@ This project is the example backend for the Student List app, implemented in Vue
    ```
 3. (Optional) Update the backend url in `vue.config.js`.
 
-4. Install dependencies
+4. Install dependencies.
    ```bash
    npm install
    ```
-5. Build source code
+5. Build source code.
    ```bash
    npm run serve
    ```
-6. Open http://localhost:8080 in your browser
+6. Open http://localhost:8080 in your browser.
