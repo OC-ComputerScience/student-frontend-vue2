@@ -15,9 +15,9 @@
 <script>
 export default {
   props: {
-    student: Object
-  }
-}
+    student: Object,
+  },
+};
 </script>
 
 <style></style>
