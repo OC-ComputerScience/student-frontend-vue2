@@ -1,31 +1,34 @@
-### student-frontend-vue2
+# student-frontend-vue2
 
-This project is the example backend for the Student List app, implemented in Vue.
+This project is the example backend for the Student List app, implemented in Vue 2.
 
-#### Prerequisites
+### Prerequisites
 
 ##### Node v10
 
-- Windows:
-  https://nodejs.org/en/download/
+- macOS & Windows:
+  https://nodejs.org/
 
 - Ubuntu:
   ```bash
-  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-  sudo apt install -y nodejs
+  sudo apt update
+  curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+  sudo apt-get install -y nodejs
+  sudo npm install -g npm@latest
   ```
 
 #### Setup
 
-1. First, clone to repo to make a local copy of it.
+1. First, clone the repo to make a local copy of it.
    ```bash
    git clone https://github.com/OC-ComputerScience/student-frontend-vue2.git
    ```
-2. Move into the new directory
+2. Move into the right directory.
    ```bash
-   cd todo-frontend-vue
+   cd  c:/XAMPP/htdocs/studentapp/student-frontend-vue2
    ```
 3. (Optional) Update the backend url in `vue.config.js`.
+
 4. Install dependencies
    ```bash
    npm install
