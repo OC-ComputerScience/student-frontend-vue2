@@ -8,44 +8,44 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 export default {
-  props: ['id'],
+  props: ["id"],
 
   data() {
     return {
       student: Object,
-      errors: []
-    }
+      errors: [],
+    };
   },
   created() {
     axios
-      .get('http://localhost/api/students/' + this.id, { crossOrigin: true })
-      .then(response => {
-        this.student = response.data[0]
+      .get("http://localhost/api/students/" + this.id, { crossOrigin: true })
+      .then((response) => {
+        this.student = response.data[0];
       })
-      .catch(error => {
-        console.log('There was an error:', error.response)
-      })
+      .catch((error) => {
+        console.log("There was an error:", error.response);
+      });
   },
 
   methods: {
     deleteStudent() {
       axios
-        .delete('http://localhost/api/students/' + this.id)
-        .then(response => {
-          this.errors = response.data
-          this.$router.push({ name: 'list' })
+        .delete("http://localhost/api/students/" + this.id)
+        .then((response) => {
+          this.errors = response.data;
+          this.$router.push({ name: "list" });
         })
-        .catch(error => {
-          this.errors = error.data
-        })
+        .catch((error) => {
+          this.errors = error.data;
+        });
     },
     cancel() {
-      this.$router.push({ name: 'list' })
-    }
-  }
-}
+      this.$router.push({ name: "list" });
+    },
+  },
+};
 </script>
 
 <style></style>
