@@ -4,7 +4,7 @@ This project is the example Vue 2 frontend for the Student List application.
 
 ### Prerequisites
 
-##### Node v10
+##### Node v16
 
 - macOS & Windows:
   https://nodejs.org/
