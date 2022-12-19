@@ -1,11 +1,21 @@
 <template>
   <div>
-    <H1>Student List</H1>
-    <StudentDisplay
-      v-for="student in students"
-      :key="student.id"
-      :student="student"
-    />
+    <h1>Student List</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Actions</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <StudentDisplay
+          v-for="student in students"
+          :key="student.id"
+          :student="student" />
+      </tbody>
+    </table>
   </div>
 </template>
 

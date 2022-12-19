@@ -1,91 +1,128 @@
 <template>
+
   <div>
+
     <H1>Student Edit</H1>
+
     <h4>{{ student.firstName }} {{ student.lastName }}</h4>
 
     <form @submit.prevent="updateStudent">
-      Id:
+       Id:
       <input v-model="student.idNumber" type="text" id="id" />
+
       <span id="idNumberErr" class="error">{{ errors.idNumber || "*" }}</span>
+
       <br />
-      <br />Fist Name:
+
+      <br />
+      Fist Name:
       <input v-model="student.firstName" type="text" id="firstName" />
+
       <span id="firstNameErr" class="error">{{ errors.firstName || "*" }}</span>
+
       <br />
-      <br />Last Name:
+
+      <br />
+      Last Name:
       <input v-model="student.lastName" type="text" id="lastName" />
+
       <span id="lastNameErr" class="error">{{ errors.lastName || "*" }}</span>
+
       <br />
-      <br />Zip:
+
+      <br />
+      Zip:
       <input
         v-model="student.zip"
         type="text"
         id="zip"
         v-on:blur="cityStateLookup()"
       />
+
       <span id="zipErr" class="error">{{ errors.zip || "*" }}</span>
+
       <br />
-      <br />City:
+
+      <br />
+      City:
       <input v-model="student.city" type="text" id="city" />
+
       <span id="cityErr" class="error">{{ errors.city || "*" }}</span>
+
       <br />
-      <br />State:
+
+      <br />
+      State:
       <input v-model="student.state" type="text" id="state" />
+
       <span id="stateErr" class="error">{{ errors.state || "*" }}</span>
+
       <br />
-      <br />E-mail:
+
+      <br />
+      E-mail:
       <input v-model="student.email" type="text" id="email" />
+
       <span id="emailErr" class="error">{{ errors.email || "*" }}</span>
+
       <br />
-      <br />Classification:
+
+      <br />
+      Classification:
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
         value="FR"
-      />Freshman
+      />
+      Freshman
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
         value="SO"
-      />Sophmore
+      />
+      Sophmore
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
         value="JR"
-      />Junior
+      />
+      Junior
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
         value="SR"
-      />Senior
-      <span id="classificationErr" class="error">{{
-        errors.classification || "*"
-      }}</span>
+      />
+      Senior
+      <span id="classificationErr" class="error">
+        {{ errors.classification || "*" }}
+      </span>
+
       <br />
-      <br />Gender:
-      <input
-        v-model="student.gender"
-        type="radio"
-        name="gender"
-        value="F"
-      />Female
-      <input
-        v-model="student.gender"
-        type="radio"
-        name="gender"
-        value="M"
-      />Male
+
+      <br />
+      Gender:
+      <input v-model="student.gender" type="radio" name="gender" value="F" />
+      Female
+      <input v-model="student.gender" type="radio" name="gender" value="M" />
+      Male
       <span id="genderErr" class="error">{{ errors.gender || "*" }}</span>
+
       <br />
+
       <br />
+
       <input type="submit" name="submit" value="Save" />
+
       <button name="cancel" v-on:click.prevent="cancel()">Cancel</button>
+
     </form>
+
   </div>
+
 </template>
 
 <script>
@@ -149,3 +186,4 @@ export default {
 </script>
 
 <style></style>
+

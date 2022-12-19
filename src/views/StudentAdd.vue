@@ -21,8 +21,7 @@
         v-model="student.zip"
         type="text"
         id="zip"
-        v-on:blur="cityStateLookup()"
-      />
+        v-on:blur="cityStateLookup()" />
       <span id="zipErr" class="error">{{ errors.zip || "*" }}</span>
       <br />
       <br />City:
@@ -42,26 +41,22 @@
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="FR"
-      />Freshman
+        value="FR" />Freshman
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="SO"
-      />Sophmore
+        value="SO" />Sophmore
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="JR"
-      />Junior
+        value="JR" />Junior
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="SR"
-      />Senior
+        value="SR" />Senior
       <span id="classificationErr" class="error">{{
         errors.classification || "*"
       }}</span>
@@ -71,14 +66,12 @@
         v-model="student.gender"
         type="radio"
         name="gender"
-        value="F"
-      />Female
+        value="F" />Female
       <input
         v-model="student.gender"
         type="radio"
         name="gender"
-        value="M"
-      />Male
+        value="M" />Male
       <span id="genderErr" class="error">{{ errors.gender || "*" }}</span>
       <br />
       <br />

@@ -1,10 +1,17 @@
 <template>
+
   <div>
+
     <H1>Student Delete</H1>
+
     <h4>Delete {{ student.firstName }} {{ student.lastName }} ?</h4>
+
     <button v-on:click="deleteStudent()">Delete</button>
+
     <button v-on:click="cancel()">Cancel</button>
+
   </div>
+
 </template>
 
 <script>
@@ -49,3 +56,4 @@ export default {
 </script>
 
 <style></style>
+

@@ -1,9 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import List from "./views/student-list.vue";
-import Edit from "./views/student-edit.vue";
-import Delete from "./views/student-delete.vue";
-import Add from "./views/student-add.vue";
+import List from "./views/StudentList.vue";
+import Edit from "./views/StudentEdit.vue";
+import Delete from "./views/StudentDelete.vue";
+import Add from "./views/StudentAdd.vue";
 
 Vue.use(Router);
 

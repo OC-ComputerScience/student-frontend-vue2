@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">List</router-link>|
+      <router-link to="/">List</router-link>
+      |
       <router-link to="/add">Add</router-link>
     </div>
     <router-view />
@@ -14,7 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 #nav {
   padding: 30px;
@@ -22,10 +23,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #bebebe;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #80162b;
 }
 </style>
