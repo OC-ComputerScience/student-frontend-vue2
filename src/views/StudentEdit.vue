@@ -1,13 +1,9 @@
 <template>
-
   <div>
-
     <H1>Student Edit</H1>
-
     <h4>{{ student.firstName }} {{ student.lastName }}</h4>
-
     <form @submit.prevent="updateStudent">
-       Id:
+      Id:
       <input v-model="student.idNumber" type="text" id="id" />
 
       <span id="idNumberErr" class="error">{{ errors.idNumber || "*" }}</span>
@@ -36,8 +32,7 @@
         v-model="student.zip"
         type="text"
         id="zip"
-        v-on:blur="cityStateLookup()"
-      />
+        v-on:blur="cityStateLookup()" />
 
       <span id="zipErr" class="error">{{ errors.zip || "*" }}</span>
 
@@ -73,29 +68,25 @@
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="FR"
-      />
+        value="FR" />
       Freshman
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="SO"
-      />
+        value="SO" />
       Sophmore
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="JR"
-      />
+        value="JR" />
       Junior
       <input
         v-model="student.classification"
         type="radio"
         name="classification"
-        value="SR"
-      />
+        value="SR" />
       Senior
       <span id="classificationErr" class="error">
         {{ errors.classification || "*" }}
@@ -118,11 +109,8 @@
       <input type="submit" name="submit" value="Save" />
 
       <button name="cancel" v-on:click.prevent="cancel()">Cancel</button>
-
     </form>
-
   </div>
-
 </template>
 
 <script>
@@ -186,4 +174,3 @@ export default {
 </script>
 
 <style></style>
-
