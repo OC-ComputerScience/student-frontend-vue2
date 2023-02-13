@@ -1,40 +1,42 @@
-# student-frontend-vue2
+# Student List Frontend with Vue 2
 
-This project is the example Vue 2 frontend for the Student List application.
+This application allows users to create and maintain a list of students. Please visit https://github.com/OC-ComputerScience/student-backend for the backend repository.
 
-### Prerequisites
+## Project Setup
 
-##### Node v16
+1. Clone the project into your **XAMPP/xamppfiles/htdocs/studentapp** directory.
 
-- macOS & Windows:
-  https://nodejs.org/
+```
+git clone https://github.com/OC-ComputerScience/student-frontend-vue2.git
+```
 
-- Ubuntu:
-  ```bash
-  sudo apt update
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-  sudo apt-get install -y nodejs
-  sudo npm install -g npm@latest
-  ```
+2. Install the project.
 
-##### Setup
+```
+npm install
+```
 
-1. First, clone the repo to make a local copy of it.
-   ```bash
-   git clone https://github.com/OC-ComputerScience/student-frontend-vue2.git
-   ```
-2. Move into the right directory.
-   ```bash
-   cd c:/XAMPP/htdocs/studentapp/student-frontend-vue2
-   ```
-3. (Optional) Update the backend url in `vue.config.js`.
+3. Make sure **Apache** is running.
 
-4. Install dependencies.
-   ```bash
-   npm install
-   ```
-5. Build source code.
-   ```bash
-   npm run serve
-   ```
-6. Open http://localhost:8080 in your browser.
+   - We recommend using XAMPP to serve this project.
+   - In XAMPP, make sure that **Apache** is running.
+
+4. Compile and run the project locally.
+
+```
+npm run serve
+```
+
+5. Open http://localhost:8080 in a browser to view the project running.
+
+6. (Optional) Compile the project for production.
+
+```
+npm run build
+```
+
+7. (Optional) Lint and fix the project files.
+
+```
+npm run lint
+```

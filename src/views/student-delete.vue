@@ -2,16 +2,20 @@
   <div>
     <H1>Student Delete</H1>
     <h4>Delete {{ student.firstName }} {{ student.lastName }} ?</h4>
-    <button v-on:click="deleteStudent()">Delete</button>
-    <button v-on:click="cancel()">Cancel</button>
+    <button @click="deleteStudent()">Delete</button>
+    <button @click="cancel()">Cancel</button>
   </div>
 </template>
 
 <script>
 import axios from "axios";
 export default {
-  props: ["id"],
-
+  props: {
+    id: {
+      type: [Number, String],
+      default: 0,
+    },
+  },
   data() {
     return {
       student: Object,

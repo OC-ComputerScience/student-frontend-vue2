@@ -5,36 +5,36 @@
 
     <form @submit.prevent="addStudent">
       Id:
-      <input v-model="student.idNumber" type="text" id="id" />
+      <input id="id" v-model="student.idNumber" type="text" />
       <span id="idNumberErr" class="error">{{ errors.idNumber || "*" }}</span>
       <br />
       <br />First Name:
-      <input v-model="student.firstName" type="text" id="firstName" />
+      <input id="firstName" v-model="student.firstName" type="text" />
       <span id="firstNameErr" class="error">{{ errors.firstName || "*" }}</span>
       <br />
       <br />Last Name:
-      <input v-model="student.lastName" type="text" id="lastName" />
+      <input id="lastName" v-model="student.lastName" type="text" />
       <span id="lastNameErr" class="error">{{ errors.lastName || "*" }}</span>
       <br />
       <br />Zip:
       <input
+        id="zip"
         v-model="student.zip"
         type="text"
-        id="zip"
-        v-on:blur="cityStateLookup()"
+        @blur="cityStateLookup()"
       />
       <span id="zipErr" class="error">{{ errors.zip || "*" }}</span>
       <br />
       <br />City:
-      <input v-model="student.city" type="text" id="city" />
+      <input id="city" v-model="student.city" type="text" />
       <span id="cityErr" class="error">{{ errors.city || "*" }}</span>
       <br />
       <br />State:
-      <input v-model="student.state" type="text" id="state" />
+      <input id="state" v-model="student.state" type="text" />
       <span id="stateErr" class="error">{{ errors.state || "*" }}</span>
       <br />
       <br />Email:
-      <input v-model="student.email" type="text" id="email" />
+      <input id="email" v-model="student.email" type="text" />
       <span id="emailErr" class="error">{{ errors.email || "*" }}</span>
       <br />
       <br />Classification:
@@ -49,7 +49,7 @@
         type="radio"
         name="classification"
         value="SO"
-      />Sophmore
+      />Sophomore
       <input
         v-model="student.classification"
         type="radio"
@@ -83,7 +83,7 @@
       <br />
       <br />
       <input type="submit" name="submit" value="Save" />
-      <button name="cancel" v-on:click.prevent="cancel()">Cancel</button>
+      <button name="cancel" @click.prevent="cancel()">Cancel</button>
     </form>
   </div>
 </template>

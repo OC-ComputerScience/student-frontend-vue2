@@ -15,7 +15,10 @@
 <script>
 export default {
   props: {
-    student: Object,
+    student: {
+      type: Object,
+      default: () => ({}),
+    },
   },
 };
 </script>
